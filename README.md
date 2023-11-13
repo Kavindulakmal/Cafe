@@ -3,7 +3,7 @@ By default, tomcat will run on port 8080. if you have a different port please ad
 ```
 server.port=<your port>
 ```
-to the application.properties file
+to the `application.properties` or `application.yml` file   
 
 #### Endpoints
 Get All Items  http://localhost:8080/api/cart  | HTTP Method= "GET"   `GET`
