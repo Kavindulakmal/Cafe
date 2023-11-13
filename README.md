@@ -19,7 +19,7 @@ Create Item   http://localhost:8080/api/cart/  | HTTP Method= `POST`
 }
 ```
 
-Update Item By Id  http://localhost:8080/api/cart/<id>  | HTTP Method= `POST`
+Update Item By Id  http://localhost:8080/api/cart/<id>  | HTTP Method= `PUT`
 
 DELETE Item By Id  http://localhost:8080/api/cart/<id>  | HTTP Method= `DEELETE`
 
