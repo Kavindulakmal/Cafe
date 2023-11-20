@@ -1,9 +1,8 @@
 # Discount Base Electricity bill calculator.
 
 ### About
-Spring boot API with MySQL calculates electricity bills using units.  if the customer type is `silver` give a `5%` discount and if the customer type 
-is `gold` give a `10%` discount to the customer's bill inputs are customer id, name, and unit for calculation. first 30 unit unit price =8 and 30 
-to 60 unit price =12 and 60 to 90 unit price =12 and above 90 unit price =20 output should be customer id, unit, amount, discount and
+This Spring boot API will calculate the electricity bill using units. every customer has a type. if the customer type is `silver`, it will give a `5%` discount and if the customer type 
+is `gold` it will give a `10%` discount to the customer's bill. inputs are `customer id`, `name`, and `unit` for calculation. According to the formula, first 30 units, unit price =8 and 30 to 60 unit price =12, and 60 to 90 unit price =12, and above 90 unit price =20. the output will show the customer ID, unit, amount, discount, and
 final bill
 
 ### Running the project
