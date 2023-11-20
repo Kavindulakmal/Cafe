@@ -1,0 +1,83 @@
+{
+    "info": {
+        "_postman_id": "YOUR_UNIQUE_POSTMAN_COLLECTION_ID",
+        "name": "Electricity Billing API",
+        "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+    },
+    "item": [
+        {
+            "name": "Calculate Bill",
+            "request": {
+                "method": "POST",
+                "header": [
+                    {
+                        "key": "Content-Type",
+                        "value": "application/json"
+                    }
+                ],
+                "body": {
+                    "mode": "raw",
+                    "raw": "{\n    \"id\": 1,\n    \"name\": \"John Doe\",\n    \"type\": \"gold\",\n    \"units\": 75\n}"
+                },
+                "url": {
+                    "raw": "http://localhost:8080/api/billing/calculate",
+                    "protocol": "http",
+                    "host": [
+                        "localhost"
+                    ],
+                    "port": "8080",
+                    "path": [
+                        "api",
+                        "billing",
+                        "calculate"
+                    ]
+                }
+            },
+            "response": []
+        },
+        {
+            "name": "Get Bill by Customer ID",
+            "request": {
+                "method": "GET",
+                "header": [],
+                "url": {
+                    "raw": "http://localhost:8080/api/billing/customer/1",
+                    "protocol": "http",
+                    "host": [
+                        "localhost"
+                    ],
+                    "port": "8080",
+                    "path": [
+                        "api",
+                        "billing",
+                        "customer",
+                        "1"
+                    ]
+                }
+            },
+            "response": []
+        }
+    ]
+}
+
+
+
+------------------------------------------
+*bill*
+customerId
+units
+amount
+discount
+finalBill
+
+*customer*
+id
+name
+type
+units
+
+/api/billing   /calculate = calculate bill = POST
+/customer/{customerId} GET
+
+
+

@@ -1,10 +1,10 @@
-package com.example.demo;
+package com.bill.ElecBill;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class DemoApplicationTests {
+class ElecBillApplicationTests {
 
 	@Test
 	void contextLoads() {
